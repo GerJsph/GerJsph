@@ -1,0 +1,63 @@
+ #include <iostream>
+ 
+ using namespace std;
+ 
+ int main ()
+ {
+ 	float angka1,angka2,hasil;
+ 	char pilihan,menu;
+ 	while(menu!='t')
+ 	{
+ 		
+	 	cout<<"Selamat datang di program kalkulator"<<endl;
+	 	cout<<"1. Pencumlahan"<<endl; 
+	 	cout<<"2. Pengurangan"<<endl; 
+	 	cout<<"3. Perkalian"<<endl; 
+	 	cout<<"4. Pembagian "<<endl; 
+	 	cout<<"Pilihan: ";
+	 	cin>>pilihan;
+		if (pilihan=='1')
+		{
+			cout<<"Masukan angka: ";
+			cin>>angka1;
+			cout<<"Masukan angka: ";                                               
+			cin>>angka2;
+			hasil=angka1+angka2;
+			cout<<"Hasil penjumlahan adalah: "<<hasil<<endl;
+		}
+		else if (pilihan=='2')
+		{
+			cout<<"Masukan angka: ";
+			cin>>angka1;
+			cout<<"Masukan angka: ";
+			cin>>angka2;
+			hasil=angka1-angka2;
+			cout<<"Hasil pengurangan adalah: "<<hasil<<endl;
+		}
+		else if (pilihan=='3')
+		{
+			cout<<"Masukan angka: ";
+			cin>>angka1;
+			cout<<"Masukan angka: ";
+			cin>>angka2;
+			hasil=angka1*angka2;
+			cout<<"Hasil perkalian adalah: "<<hasil<<endl;
+		}
+		else if (pilihan=='4')
+		{
+			cout<<"Masukan angka: ";
+			cin>>angka1;
+			cout<<"Masukan angka: ";
+			cin>>angka2;
+			hasil=angka1/angka2;
+			cout<<"Hasil pembagian adalah: "<<hasil<<endl;
+		}
+		else
+		{
+			cout<<"Pilihan Salah"<<endl;
+		}
+		cout<<"Apakah ingin mengulang ke menu? (y/t): ";
+		cin>>menu;
+	}
+	 return 0; 
+ }
